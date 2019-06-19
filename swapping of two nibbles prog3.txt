@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+
+unsigned char swapNibbles(unsigned char x)
+
+{
+
+    return ( (x & 0x0F)<<4 | (x & 0xF0)>>4 );
+
+}
+
+
+void main()
+
+{
+
+    unsigned char x = 0xAB;
+         
+    printf("%x", swapNibbles(x));
+
+}
