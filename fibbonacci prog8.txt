@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+void main()
+
+{
+
+    int a=0,b=1,fib,n;
+
+    printf("enter a number\n");
+
+    scanf("%d",&n);
+
+    printf("%d\n%d\n",a,b);
+
+    fib=a+b;
+
+    while(fib<=n)
+
+    {
+
+        printf("%d\n",fib);
+
+        a=b;
+
+        b=fib;
+
+        fib=a+b;
+
+     }
+
+
+}
